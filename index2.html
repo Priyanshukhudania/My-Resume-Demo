@@ -1,0 +1,238 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>FORMS IN HTML</h2>
+    <form action="">
+      <label for="">FIRST NAME</label>
+      <input type="text" required  placeholder="plz first name"/>
+      <label for="">MIDDLE NAME</label>
+      <input type="text" />
+      <label for="">LAST NAME</label>
+      <input type="text" />
+    </form>
+    <form action="">
+      <br />
+      <label for="">AGE</label>
+      <input type="number" />
+      <br /><br />
+      <label for="">date</label>
+      <input type="date" /><br /><br />
+      <label for="">PASSWORD</label>
+      <input type="password" style="background-color: aquamarine" />
+    </form>
+    <form action="">
+      <p>size of tshirt</p>
+      <input type="radio" name="small " id="small" />
+      <label for="">medium</label>
+      <input type="radio" name="small " id="small" />
+      <label for="">larger</label>
+      <input type="radio" name="small " id="small" />
+      <label for="">extra-large</label>
+      <br /><br />
+      <label for="color ">please select color for the shirt:</label>
+      <input type="color" />
+      <br /><br />
+      <label for="payment">select payment option:</label>
+        <select name="payment" id="payment-option">
+            <option value=""></option>
+            <option value="payment">Gpay</option>
+            <option value="">PAYTM</option>
+            <option value="">UPI</option>
+            <option value="">COD</option>
+        </select>
+        <br><br>
+        <label for="">Please give a feedback:</label>
+        <!-- <input type="
+         "> -->
+<!-- <textarea name="comt" id="comet" rows="10" cols="10" placeholder="max 120 words"></textarea>
+        <br><br>
+        <input type="reset">
+        <input type="submit">
+        <input type="search">
+    </form>
+  </body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- </ <style>
+        table,td,th {border: 2px solid red;}
+  style> -->
+    <header>
+      <table style="border: none">
+        <!-- header part starts -->
+        <tr>
+          <td style="border: none">
+            <img
+              src="data:image/jpeg;base64,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"
+              alt=""
+            />
+          </td>
+          <td style="border: none">
+            <h2 style="width: 130%; float: left">PRIYANSHU KHUDANIA</h2>
+            <p>A passionate full stack web developer</p>
+            <p>
+              I love web development and here to assist the coding ethusiants!
+            </p>
+
+            <ul>
+               <li><a href="">Education</a></li>
+              <li> <a href="">Work</a></li>
+              <li> <a href="">Project</a></li>
+              <li> <a href="">Connect With Me</a></li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+    </header>
+    <hr />
+    <!-- header part ends  -->
+
+    <!-- section part starts -->
+    <main>
+        <section id="Education">
+
+            <h3>EDUCATION:</h3>
+            <table id="1">
+              <style>
+                table,
+                th,
+                td,
+                tr {
+                  border: 1px solid black;
+                }
+              </style>
+              <tr>
+                <th>Courses</th>
+                <th>University</th>
+                <th>Year</th>
+              </tr>
+              <tr>
+                <td>Btech</td>
+                <td>amity</td>
+                <td>2020</td>
+              </tr>
+              <tr>
+                <td>12th</td>
+                <td>kannada univ</td>
+                <td>2018</td>
+              </tr>
+            </table>
+        </section>
+
+      <section id="Work Experiences">
+
+          <h2>Work Experiences</h2>
+        <ul>
+          <li>
+            <strong> Ocacle limited </strong>
+            <br />
+            <p>technology analyst</p>
+            <br />
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus
+            impedit non eius dolor? Explicabo facere cumque, iure dolore rem
+            inventore unde ipsum architecto minima cum omnis porro sit iusto quas
+            odio eligendi illum, laboriosam id totam, accusamus ratione dicta
+            animi nam obcaecati. Nulla voluptatibus culpa cum perspiciatis tempora
+            corrupti nemo illum unde enim ut officia, adipisci officiis
+            necessitatibus sint pariatur vitae consequatur, rem provident
+            repellendus quasi voluptates assumenda ratione fugit. Consectetur
+            accusamus dolore necessitatibus, distinctio neque voluptates magni?
+            Nesciunt quos cum sint, corporis quaerat, ullam, doloremque nostrum
+            dolorem animi temporibus quibusdam! Labore rerum architecto vitae
+            dicta itaque voluptas illum aliquid.
+          </li>
+        </ul>
+      </section>
+
+        <section id="Technical Profile">
+
+            <h2 style="color: green">TECHNICAL PROFILE</h2>
+            <ul
+              style="
+                font-weight: 700;
+                font-size: larger;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+                  sans-serif;
+              "
+            >
+              <li>Language: C programming, C++, java programming , net technology</li>
+              <li>Operation system: Windows 200/xp/windows 7& linux</li>
+              <li>MS office and front page</li>
+              <li>Web technology: HTML,css,javascript ,asp,net</li>
+            </ul>
+        </section>
+      
+        <section id="STRUCTURE">
+
+            <h2 style="color: blue">STRUCTURE</h2>
+          <ul>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
+            <li>Lorem ipsum dolor sit.</li>
+            <li>Lorem ipsum dolor sit.</li>
+          </ul>
+        </section>
+
+        <section id="Connect with me">
+
+            <h2>Connect With Me</h2>
+            <p>
+              Email:
+              <a href="https://mail.google.com/mail/u/0/#inbox"
+                >priyanshukhudania@gmail.com</a
+              >
+            </p>
+            <p>Instagram: <a href="">Priyanshu khudania</a></p>
+            <p>Github: <a href=" ">Priyanshu_khudania </a></p>
+            <p>linkdin: <a href=" ">Priyanshu_khudania</a></p>
+            <br>
+            <button type="button"> <a href="">Back To Top</a></button>
+        </section>
+        <br>
+
+    <footer>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ratione
+      atque incidunt eaque corporis labore eum, earum ducimus! Assumenda
+      voluptatem porro eius fuga hic ducimus quaerat molestias, fugiat atque ut
+      error enim cupiditate officiis amet autem libero! Sunt magnam voluptatibus
+      a, odio nemo molestiae perferendis cumque delectus necessitatibus ipsum
+      rerum eos quisquam optio temporibus, cupiditate quae voluptatem
+      reprehenderit! Nesciunt, molestiae nulla dolores velit et tempora rem
+      praesentium provident ut facilis, iure dolore distinctio suscipit
+      voluptatem totam perferendis, harum sapiente quaerat fuga at? Sunt velit
+      cum, aliquam odit praesentium delectus nesciunt corporis vel voluptas
+      reprehenderit animi quaerat inventore aut nisi aliquid tempora accusamus
+      ratione quidem repellat odio mollitia voluptates ipsum? Quos natus non
+      sint vitae explicabo error nam quas autem ipsam consequatur perferendis,
+      aut amet quidem modi vero laboriosam deserunt ex molestiae minima dolor!
+      Doloremque perferendis accusantium non. Vel, officia repudiandae ipsam
+      architecto reiciendis blanditiis doloribus tenetur tempora optio
+      voluptatem autem itaque ipsum ducimus vero error ipsa, iste obcaecati ut
+      dolores natus deleniti. Amet minima dolores adipisci fuga voluptatibus.
+      Tempora, nam modi aliquid ex nemo sunt, culpa, mollitia excepturi beatae
+      laborum dignissimos inventore dicta hic atque. Deleniti, animi ut enim
+      minus earum, rerum natus officiis distinctio quas nemo voluptates. Debitis
+      delectus inventore quas vero, nisi culpa expedita consectetur facere
+      consequatur rem? Esse sint vel at id. Atque vel est numquam modi
+      perspiciatis, sint quia rem aperiam eos necessitatibus culpa veritatis
+      dicta ratione ut delectus voluptatum a molestiae voluptas cum animi
+      pariatur quos doloribus. Ipsam eaque a cum magnam voluptatem omnis velit
+      dolore laboriosam hic? Eaque est enim nobis, suscipit ea ratione
+      voluptatem, magni officia, excepturi recusandae deserunt. Adipisci vel id
+      voluptatem eius, aperiam, exercitationem, beatae aspernatur modi explicabo
+      laborum eveniet ipsa. Sit nemo quas ipsam iusto illum adipisci reiciendis
+      autem facere, ullam fugit. Iure quod esse in explicabo cumque sunt a.
+    </footer>
+  </body>
+</html>
